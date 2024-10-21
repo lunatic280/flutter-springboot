@@ -21,7 +21,7 @@ public class AppConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins("http://10.0.2.2:56072")  // Flutter 앱 주소
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE") 
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }

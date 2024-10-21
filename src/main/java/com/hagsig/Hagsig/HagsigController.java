@@ -11,6 +11,8 @@ import org.springframework.web.util.UriBuilder;
 import java.io.IOException;
 import java.net.URI;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 @RestController
@@ -26,6 +28,12 @@ public class HagsigController {
     public String api() {
         return hagsigService.getJsonHagsig();
     }
+
+//    @GetMapping("/api/announcement")
+//    @ResponseBody
+//    public List<Map<String, String>> getAnnouncementAsJson() {
+//        return hagsigService.getAnnouncement();
+//    }
 
 
 }
